@@ -1,0 +1,47 @@
+Question réponses sur GIT 
+
+1. Pourquoi GIT mieux que Subversion?
+GIT est un système de contrôle de version open source. cela permet d’exécuter les ‘versions’ d’un projet, qui montrent les modifications apportées au code, et permet de conserver le retour en arrière si nécessaire et d’annuler ces modifications. Plusieurs développeurs peuvent vérifier et télécharger les modifications. Chaque modification peut ensuite être attribuée à un développeur spécifique.
+ 
+2. Qu’est-ce que « GIT Stash »?
+GIT stash prend l’état actuel du répertoire de travail et de l’index et y mettent dans la pile pour plus tard, et vous restitue un répertoire de travail propre. Donc, si vous êtes au milieu de quelque chose « Tache 1 » et que vous avez besoin de passer à autre chose « Tache 2 » et que vous ne voulez pas perdre vos modifications dans « Tache 1 », vous pouvez utiliser GIT stash.
+ 
+3. Quelle est la différence entre « forking » et « cloning »?
+cloning : crée une copie complète d’un dépôt sur votre ordinateur local.
+forking : copie un projet github existant sur votre compte github.
+ 
+4. Que fait la commande « GIT PUSH » dans GIT?
+«GIT PUSH» met à jour les références distantes avec les objets associés.
+ 
+5. Comment fusionner votre branche avec la branche master?
+    1. $ git checkout master
+    2. $ git merge <branch-name>
+ 
+ 
+ 
+6. Qu’est-ce qu’un « conflit » dans git?
+Un «conflit» survient lorsque le commit à fusionner à un endroit et que le commit actuel a aussi un changement au même endroit. Git ne sera pas capable de prédire quel changement devrait avoir la priorité.
+ 
+7. Lequel n’est pas dangereux? Revert ou reset?
+Revert, car vous ne supprimez pas réellement le commit de votre historique, vous le remplacez par un autre commit.
+ 
+8. Comment un conflit dans git peut-il être résolu?
+Pour résoudre le conflit dans git, éditez les fichiers pour corriger les modifications en conflit, puis ajoutez les fichiers résolus en exécutant «git add» pour valider la fusion réparée, puis «git commit». Git se souvient que vous êtes en train de fusionner, il définit donc correctement les parents du commit.
+ 
+9. Pour supprimer une branche, quelle commande est utilisée?
+Une fois votre branche de développement ‘mergée’ dans la branche principale « master », vous n’avez plus besoin de la branche de développement. Pour supprimer une branche, utilisez la commande $ git branch –d [head].
+ 
+10. Quelle est la différence entre « git remote add » et « git clone »?
+« Git remote add » crée simplement une entrée dans votre configuration git qui spécifie le nom d’un URL. Alors que « git clone » crée un nouveau référentiel git en copiant celui existant à l’URI.
+ 
+11. Mentionnez quelques-uns des meilleurs clients graphiques Git pour Linux?
+Les meilleurs clients GIT pour LINUX sont les suivants:
+    • Git Cola
+    • Git-g
+    • Smart git
+    • Giggle
+    • Git GUI
+ 
+12. Que fait la commande $ git diff ?
+«Git diff» affiche les changements entre les derniers commits
+
